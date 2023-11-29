@@ -7,9 +7,11 @@ spec:
   revisionHistoryLimit: 2
   strategy:
     type: RollingUpdate
-    rollingUpdate:
-      maxSurge: 25%
-      maxUnavailable: 25%
+  # strategy:
+  #   type: RollingUpdate
+  #   rollingUpdate:
+  #     maxSurge: 25%
+  #     maxUnavailable: 25%
   selector:
     matchLabels:
       app: service-b
@@ -19,7 +21,7 @@ spec:
         app: service-b
     spec:
       containers:
-      - image: nicho90/service-b:1.0.2
+      - image: nicho90/service-b:1.0.3
         name: service-b
         resources:
           limits:
@@ -36,7 +38,7 @@ spec:
         - name: SERVICE_A_PORT
           value: "6000"
         - name: SERVICE_A_API_KEY
-          value: "ghi"
+          value: "abc"
         - name: SERVICE_B_PORT
           value: "6000"
         restartPolicy: Always
