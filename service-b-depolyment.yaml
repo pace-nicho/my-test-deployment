@@ -3,8 +3,13 @@ kind: Deployment
 metadata:
   name: service-b
 spec:
-  replicas: 6
+  replicas: 10
   revisionHistoryLimit: 0
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
   selector:
     matchLabels:
       app: service-b
@@ -31,7 +36,7 @@ spec:
         - name: SERVICE_A_PORT
           value: "6000"
         - name: SERVICE_A_API_KEY
-          value: "ghi"
+          value: "abc"
         - name: SERVICE_B_PORT
           value: "6000"
         restartPolicy: Never        
