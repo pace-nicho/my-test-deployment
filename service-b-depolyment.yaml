@@ -33,7 +33,8 @@ spec:
         - name: SERVICE_A_API_KEY
           value: "ghi"
         - name: SERVICE_B_PORT
-          value: "6000"        
+          value: "6000"
+        restartPolicy: Never        
         # Liveness probe
         livenessProbe:
           httpGet:
