@@ -26,9 +26,11 @@ spec:
         ports:
         - containerPort: 6000
         env:
+        - name: SERVICE_A_HOST
+          value: "service-a"
         - name: SERVICE_A_PORT
           value: "6000"
+        - name: SERVICE_A_API_KEY
+          value: "abc"
         - name: SERVICE_B_PORT
           value: "6000"
-        - name: SERVICE_A_API_KEY
-          value: abc
