@@ -4,7 +4,7 @@ metadata:
   name: service-b
 spec:
   replicas: 6
-  revisionHistoryLimit: 2
+  revisionHistoryLimit: 0
   selector:
     matchLabels:
       app: service-b
@@ -14,7 +14,7 @@ spec:
         app: service-b
     spec:
       containers:
-      - image: nicho90/service-b:1.0.0
+      - image: nicho90/service-b:1.0.1
         name: service-b
         resources:
           limits:
