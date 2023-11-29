@@ -29,9 +29,9 @@ spec:
         - name: SERVICE_A_PORT
           value: "6000"
         - name: SERVICE_A_API_KEY_NEW
-          value: "def"
+          value: "ghi"
         - name: SERVICE_A_API_KEY_OLD
-          value: "def"
+          value: "ghi"
         - name: POD_NAME
           valueFrom:
             fieldRef:
