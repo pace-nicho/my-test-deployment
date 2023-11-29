@@ -28,10 +28,8 @@ spec:
         env:
         - name: SERVICE_A_PORT
           value: "6000"
-        - name: SERVICE_A_API_KEY
-          value: "abc"
         - name: SERVICE_A_API_KEY_NEW
-          value: "abc"
+          value: "def"
         - name: SERVICE_A_API_KEY_OLD
           value: "abc"
         - name: POD_NAME
