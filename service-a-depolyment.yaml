@@ -31,7 +31,7 @@ spec:
         - name: SERVICE_A_API_KEY_NEW
           value: "def"
         - name: SERVICE_A_API_KEY_OLD
-          value: "abc"
+          value: "def"
         - name: POD_NAME
           valueFrom:
             fieldRef:
