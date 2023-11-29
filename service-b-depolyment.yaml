@@ -39,7 +39,7 @@ spec:
           value: "abc"
         - name: SERVICE_B_PORT
           value: "6000"
-        restartPolicy: Never
+        restartPolicy: Always
         # Startup probe
         startupProbe:
           httpGet:
