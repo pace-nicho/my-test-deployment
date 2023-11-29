@@ -14,16 +14,16 @@ spec:
         app: service-a
     spec:
       containers:
-        - image: nicho90/service-a:1.0.0
-          name: service-a
-          ports:
-            - containerPort: 6000
-          env:
-            - name: SERVICE_A_PORT
-              value: 6000
-            - name: SERVICE_A_API_KEY
-              value: abc
-            - name: SERVICE_A_API_KEY_NEW
-              value: abc
-            - name: SERVICE_A_API_KEY_OLD
-              value: abc
+      - image: nicho90/service-a:1.0.0
+        name: service-a
+        ports:
+        - containerPort: 6000
+        env:
+        - name: SERVICE_A_PORT
+          value: 6000
+        - name: SERVICE_A_API_KEY
+          value: abc
+        - name: SERVICE_A_API_KEY_NEW
+          value: abc
+        - name: SERVICE_A_API_KEY_OLD
+          value: abc

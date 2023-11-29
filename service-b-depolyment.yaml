@@ -14,14 +14,14 @@ spec:
         app: service-b
     spec:
       containers:
-        - image: nicho90/service-b:1.0.0
-          name: service-b
-          ports:
-            - containerPort: 6000
-          envs:
-            - name: SERVICE_A_PORT
-              value: 6000
-            - name: SERVICE_B_PORT
-              value: 6000
-            - name: SERVICE_A_API_KEY
-              value: abc
+      - image: nicho90/service-b:1.0.0
+        name: service-b
+        ports:
+        - containerPort: 6000
+        env:
+        - name: SERVICE_A_PORT
+          value: 6000
+        - name: SERVICE_B_PORT
+          value: 6000
+        - name: SERVICE_A_API_KEY
+          value: abc
