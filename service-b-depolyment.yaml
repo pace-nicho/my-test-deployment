@@ -36,7 +36,7 @@ spec:
         - name: SERVICE_A_PORT
           value: "6000"
         - name: SERVICE_A_API_KEY
-          value: "def"
+          value: "ghi"
         - name: SERVICE_B_PORT
           value: "6000"
         restartPolicy: Always
