@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: service-b
 spec:
-  replicas: 1
+  replicas: 6
   revisionHistoryLimit: 2
   selector:
     matchLabels:
