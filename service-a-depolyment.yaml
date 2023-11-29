@@ -14,7 +14,7 @@ spec:
         app: service-a
     spec:
       containers:
-      - image: nicho90/service-a:1.0.0
+      - image: nicho90/service-a:1.0.1
         name: service-a
         resources:
           limits:
@@ -34,4 +34,8 @@ spec:
           value: "abc"
         - name: SERVICE_A_API_KEY_OLD
           value: "abc"
+        - name: POD_NAME
+          valueFrom:
+            fieldRef:
+              fieldPath: metadata.name
         
