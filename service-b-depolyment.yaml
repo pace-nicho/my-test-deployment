@@ -31,6 +31,6 @@ spec:
         - name: SERVICE_A_PORT
           value: "6000"
         - name: SERVICE_A_API_KEY
-          value: "abc"
+          value: "def"
         - name: SERVICE_B_PORT
           value: "6000"
