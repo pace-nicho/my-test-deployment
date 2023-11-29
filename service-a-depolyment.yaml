@@ -29,11 +29,10 @@ spec:
         - name: SERVICE_A_PORT
           value: "6000"
         - name: SERVICE_A_API_KEY_NEW
-          value: "ghi"
+          value: "abc"
         - name: SERVICE_A_API_KEY_OLD
-          value: "ghi"
+          value: "abc"
         - name: POD_NAME
           valueFrom:
             fieldRef:
               fieldPath: metadata.name
-        
