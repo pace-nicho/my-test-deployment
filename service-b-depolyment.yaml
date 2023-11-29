@@ -16,6 +16,13 @@ spec:
       containers:
       - image: nicho90/service-b:1.0.0
         name: service-b
+        resources:
+          limits:
+            cpu: "200m"  # 200 milliCPU (0.2 CPU cores)
+            memory: "256Mi"  # 256 megabytes
+          requests:
+            cpu: "100m"  # 100 milliCPU (0.1 CPU cores)
+            memory: "128Mi"  # 128 megabytes
         ports:
         - containerPort: 6000
         env:
